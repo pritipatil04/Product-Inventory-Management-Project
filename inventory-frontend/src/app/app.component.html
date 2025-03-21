@@ -1,0 +1,17 @@
+<div class="app-container">
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Welcome to Inventory Management</h1>
+    <nav class="nav-links">
+      <a routerLink="/products">Products</a>
+      <a routerLink="/about">About</a>
+      <a *ngIf="!isLoggedIn" routerLink="/login">Login</a>
+      <a *ngIf="!isLoggedIn" routerLink="/register">Register</a>
+      <a *ngIf="isLoggedIn" (click)="logout()" style="cursor: pointer;">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Router Outlet -->
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

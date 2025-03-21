@@ -1,0 +1,82 @@
+<div class="edit-product-container">
+  <div class="edit-product-form">
+    <h2>{{ productId ? 'Edit Product' : 'Add New Product' }}</h2>
+    
+    <form (ngSubmit)="onSubmit()" #productForm="ngForm">
+      <!-- Product Name -->
+      <div class="form-group">
+        <label for="name">Product Name</label>
+        <input
+          type="text"
+          id="name"
+          [(ngModel)]="product.name"
+          name="name"
+          required
+          class="form-control"
+          placeholder="Enter product name"
+        />
+      </div>
+
+      <!-- Product Description -->
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          [(ngModel)]="product.description"
+          name="description"
+          required
+          class="form-control"
+          placeholder="Enter product description"
+        ></textarea>
+      </div>
+
+      <!-- Manufacturer -->
+      <div class="form-group">
+        <label for="manufacturer">Manufacturer</label>
+        <input
+          type="text"
+          id="manufacturer"
+          [(ngModel)]="product.manufacturer"
+          name="manufacturer"
+          required
+          class="form-control"
+          placeholder="Enter manufacturer name"
+        />
+      </div>
+
+      <!-- Price -->
+      <div class="form-group">
+        <label for="price">Price (₹)</label>
+        <input
+          type="number"
+          id="price"
+          [(ngModel)]="product.price"
+          name="price"
+          required
+          class="form-control"
+          placeholder="Enter product price"
+        />
+      </div>
+
+      <!-- Quantity -->
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input
+          type="number"
+          id="quantity"
+          [(ngModel)]="product.quantity"
+          name="quantity"
+          required
+          class="form-control"
+          placeholder="Enter quantity"
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit" class="btn">{{ productId ? 'Update Product' : 'Add Product' }}</button>
+        <button type="button" class="btn cancel" routerLink="/products">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

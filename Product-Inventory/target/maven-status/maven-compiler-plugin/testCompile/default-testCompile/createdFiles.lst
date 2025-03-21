@@ -1,0 +1,4 @@
+com\wirpo\repo\ProductRepositoryTest.class
+com\wirpo\ProductInventoryApplicationTests.class
+com\wirpo\service\ProductServiceTest.class
+com\wirpo\controller\ProductControllerTest.class

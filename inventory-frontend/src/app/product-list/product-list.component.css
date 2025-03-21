@@ -1,0 +1,95 @@
+/* General Container */
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Bar */
+  .search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  thead {
+    background: #007bff;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .view-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .edit-btn {
+    background: #17a2b8; /* Updated color */
+    color: white; /* Updated text color */
+}
+
+.edit-btn:hover {
+    background: #138496; /* Hover color for Edit button */
+}
+
+.delete-btn {
+    background: #e83e8c; /* Updated color */
+    color: white; /* Updated text color */
+}
+
+.delete-btn:hover {
+    background: #c82333; /* Hover color for Delete button */
+}
+
+  
+.add-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+  }
+  .add-btn:hover {
+    background: #0056b3;
+}

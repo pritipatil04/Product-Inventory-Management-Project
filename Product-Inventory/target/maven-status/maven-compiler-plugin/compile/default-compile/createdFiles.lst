@@ -1,0 +1,15 @@
+com\wirpo\controller\AuthController.class
+com\wirpo\dto\AuthRequest.class
+com\wirpo\dto\RegisterRequest.class
+com\wirpo\ProductInventoryApplication.class
+com\wirpo\repo\ProductRepository.class
+com\wirpo\security\JwtUtil.class
+com\wirpo\controller\ProductController.class
+com\wirpo\domain\Product.class
+com\wirpo\security\SecurityConfig.class
+com\wirpo\service\ProductService.class
+com\wirpo\dto\AuthResponse.class
+com\wirpo\repo\UserRepository.class
+com\wirpo\service\UserService.class
+com\wirpo\domain\User.class
+com\wirpo\security\JwtAuthenticationFilter.class
